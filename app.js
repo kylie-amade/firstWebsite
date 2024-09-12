@@ -11,7 +11,6 @@ let runAutoRun = setTimeout(() => {
   nextDom.click();
 }, timeAutoNext);
 
-
 nextDom.onclick = function () {
   showSlider("next");
 };
@@ -19,8 +18,6 @@ nextDom.onclick = function () {
 prevDom.onclick = function () {
   showSlider("prev");
 };
-
-
 
 function showSlider(type) {
   let itemSlider = document.querySelectorAll(".slider .list .item");
@@ -37,12 +34,9 @@ function showSlider(type) {
     sliderDom.classList.add("prev");
   }
 
-
   clearTimeout(runTimeOut);
   runTimeOut = setTimeout(() => {
     sliderDom.classList.remove("next");
     sliderDom.classList.remove("prev");
   }, timeRunning);
-
-  
 }
