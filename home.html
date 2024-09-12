@@ -304,31 +304,31 @@
       </div>
     </div>
     <div class="container-main">
-      <h1>Your Questions , Our Answers</h1>
+      <h1>Your Questions , Our Answers!</h1>
       <div class="container">
         <h3>What makes your bookstore unique?</h3>
-        <p>We blend creativity with user-friendly design</p>
+        <p class="quiz">We blend creativity with user-friendly design</p>
       </div>
       <div class="container">
         <h3>How do I navigate your site?</h3>
-        <p>It's as easy as pie—no, easier</p>
+        <p class="quiz">It's as easy as pie—no, easier</p>
       </div>
       <div class="container">
         <h3>Can I suggest a book?</h3>
-        <p>Absolutely! We love your recommendations!</p>
+        <p class="quiz">Absolutely! We love your recommendations!</p>
       </div>
       <div class="container">
         <h3>What if I need help?</h3>
-        <p>Our team is just a click away!</p>
+        <p class="quiz">Our team is just a click away!</p>
       </div>
       <div class="container">
         <h3>Do you offer discounts?</h3>
-        <p>Yes, who does not love a good deal?`</p>
+        <p class="quiz">Yes, who does not love a good deal?`</p>
       </div>
     </div>
     <div class="container-new">
       <h1>Membership Plans</h1>
-      <div>
+      <div class="container-membership">
         <button>
           BookWorm
         </br>
@@ -337,7 +337,7 @@
         <p>Enjoy exclusive discounts and early access to new releases. Join the club!</p>
         <button>Join Now</button>
       </div>
-      <div>
+      <div class="container-membership">
         <button>
           Bibliophile
         </br>
@@ -346,7 +346,7 @@
         <p>Get all Bookworm benefits plus free deliveries on orders over Kes. 2,000. Score</p>
         <button>Join Now</button>
       </div>
-      <div>
+      <div class="container-membership">
         <button>
           Literary Lover
         </br>
@@ -355,7 +355,7 @@
         <p>All Bibliophile perks plus a monthly book recommendation box. Surprise yourself!</p>
         <button>Join Now</button>
       </div>
-      <div>
+      <div class="container-membership">
         <button>
           Epic Reader
         </br>
@@ -365,61 +365,50 @@
         <button>Join Now</button>
       </div>
     </div>
-    <div class="container-rate">
-      <ul>
-        <li>
-          <i class = "fa fa-star checked"></i>
-        </li>
-        <li>
-          <i class = "fa fa-star checked"></i>
-        </li>
-        <li>
-          <i class = "fa fa-star checked"></i>
-        </li>
-        <li>
-          <i class = "fa fa-star checked"></i>
-        </li>
-        <li>
-          <i class = "fa fa-star checked"></i>
-        </li>
-      </ul>
-    </div>
+
     <div class="container-join">
       <h2>Join the Bookstore Revolution!</h2>
       <form>
-        <input type="search" placeholder="test@email.com"/>
-        <input type="submit" value="Subscribe Now!"/>
+        <input type="search" placeholder="test@email.com" class="field"/>
+        <input type="submit" value="Subscribe Now!" class="sub"/>
       </form>
     </div>
-    <div> 
+    <div class="rate"> 
       <ul>
         <li>
           1,000+
         </li>
-        <li>
+        <li class="read">
          Happy Readers
         </li>
         <li>
           500+
         </li>
-        <li>
+        <li class="read">
           Books Available
         </li>
       </ul>
     </div>
-    <div >
+    <div class="container-touch">
       <h2>Get In Touch</h2>
       <div>
         <form action="#" method="post"> 
           <fieldset id="first">
         <label for="name-label" id="name-label">Name:</label>
+        <br/>
         <input id="name" type="text" name="text"
 placeholder="Enter your name"      required>
         <br/>
+        <label for="name-label" id="name-label">Email:</label>
+         <br/>
+        <input id="name"type="email" placeholder="test@email.com"/>
+         <br/>
+        <label for="name-label" id="name-label">Phone:</label>
+         <br/>
+        <input id="name"type="number" placeholder="Phone"/>
         </form>
         <fieldset>
-          <legend>Feedback</legend>
-          <label for="feedback"></label>
+          <label for="feedback" id="feedback-label">Feedback</label>
         </fieldset>
         <textarea id="feedback" name="message" rows="4" cols="30"
             placeholder="maximum 300 words"></textarea>
