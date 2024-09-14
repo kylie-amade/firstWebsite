@@ -315,7 +315,7 @@ nav {
   }
 }
 .container-fluid{
-    background-color: rgb(241, 234, 245);
+    background-color: #eae3f1;
     align-items: center;
 }
 h3 {
@@ -340,8 +340,8 @@ h3 {
 
 .gallery {
   height:500px;
-  width: 100%;
-  margin: 15px;
+  width:100%;
+  margin:15px;
   box-sizing: border-box;
   float: left;
   text-align: center;
@@ -350,7 +350,7 @@ h3 {
   padding-top: 10px;
   box-shadow: 0 14px 28px rgba(43, 41, 41, 0.25) 0 10px 10px rgba(0,0,0,0.22);
   transition: .4s;
-  background: #faf9fa;
+  background:  white;
 }
 
 .card-img{
@@ -359,9 +359,9 @@ h3 {
     text-align: center;
     margin: 0 auto;
     display:block;
-    border-radius: 5px;
+    border-radius: 20px;
     object-fit: cover;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
 }
 
@@ -402,7 +402,7 @@ h6{
   padding: 20px;
 }
 .container-main ,.container-new{
-  background-color: rgb(248, 248, 241);
+  background-color: ;
   text-align: center;
   padding-bottom: 9px;
 }
@@ -413,7 +413,7 @@ h6{
 .container{
   max-width: 600px;
   border-radius: 20px;
-  background-color:rgb(241, 234, 240);
+  background-color:rgb(222, 181, 245);
   gap:20px;
   box-shadow: 0 14px 28px rgba(43, 41, 41, 0.25) 0 10px 10px rgba(0,0,0,0.22);
   transition: .4s;
@@ -509,7 +509,8 @@ h6{
 
 }
 .container-touch{
-  background-color: #e4cfe9;
+  background-color:#eae3f1;
+  text-align: center;
   
 }
 #feedback{
@@ -529,7 +530,33 @@ h6{
   padding: 5px;
   font-weight: bold;
 }
-
+#feedback-submit{
+  padding: 10px;
+  width:200px;
+  background-color: #8549c2;
+  border: 1px solid #8549c2;
+  border-radius: 90px;
+  color: white;
+  margin-bottom: 20px;
+}
+.container-contact{
+  background-color: #8549c2;
+  text-align: center;
+}
+.container-contact h1{
+  font-weight: bold;
+  padding: 20px;
+}
+.container-contact img{
+  padding:20px;
+}
+.info{
+  padding: 10px;
+}
+.dropdown{
+  display:inline-flex;
+  justify-content: space-between;
+}
 
 
 

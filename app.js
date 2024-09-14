@@ -5,7 +5,7 @@ let listItemDom = document.querySelector(".slider .list");
 let thumbnailDom = document.querySelector(".slider .thumbnail");
 
 let timeRunning = 3000;
-let timeAutoNext = 7000;
+let timeAutoNext = 10000;
 let runTimeOut;
 let runAutoRun = setTimeout(() => {
   nextDom.click();
@@ -27,11 +27,13 @@ function showSlider(type) {
     listItemDom.appendChild(itemSlider[0]);
     thumbnailDom.appendChild(itemThumbnail[0]);
     sliderDom.classList.add("next");
-  } else {
+  }else{
     let positionLastItem = itemSlider.length - 1;
     listItemDom.prepend(itemSlider[positionLastItem]);
     thumbnailDom.prepend(itemThumbnail[positionLastItem]);
     sliderDom.classList.add("prev");
+  
+    
   }
 
   clearTimeout(runTimeOut);
