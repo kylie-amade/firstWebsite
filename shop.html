@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   <header></header>
+    <header>
       <nav class="navbar">
         <a class="navbar-brand" href="#">
           <img src="./images/logo.png" width="80px" id="nav-imag" />
@@ -43,12 +43,65 @@
         </ul>
       </nav>
     </header>
-    <br/>
-    <br/>
-    <div>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/specs.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/teenagers.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/author.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+    <br />
+    <div class="d-flex justify content-between">
       <div class="dropdown">
         <button
-          class="btn  dropdown-toggle"
+          class="btn dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -58,16 +111,18 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Exercise Books</a></li>
           <li><a class="dropdown-item" href="#">Pens,Pencils & Pouches</a></li>
-          <li><a class="dropdown-item" href="#">Office and School Stationery</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Office and School Stationery</a>
+          </li>
           <li><a class="dropdown-item" href="#">Files & Binders</a></li>
           <li><a class="dropdown-item" href="#">Grade</a></li>
           <li><a class="dropdown-item" href="#">Calculators</a></li>
           <li><a class="dropdown-item" href="#">Notebooks and Diaries</a></li>
         </ul>
-      </div class="drop">
+      </div>
       <div class="dropdown">
         <button
-          class="btn  dropdown-toggle"
+          class="btn dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -86,7 +141,7 @@
       </div>
       <div class="dropdown">
         <button
-          class="btn  dropdown-toggle"
+          class="btn dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -97,19 +152,22 @@
           <li><a class="dropdown-item" href="#">Boards</a></li>
           <li><a class="dropdown-item" href="#">Toys</a></li>
           <li><a class="dropdown-item" href="#">Puzzles</a></li>
-          
         </ul>
       </div>
-      <div class="dropdown"></div>
+      <div class="dropdown">
         <button
-          class="btn  dropdown-toggle"
+          class="btn dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          University and Technical Training Institutes Products
+          High School, University and TTI Products
         </button>
         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Form 1</a></li>
+          <li><a class="dropdown-item" href="#">Form 2</a></li>
+          <li><a class="dropdown-item" href="#">Form 3</a></li>
+          <li><a class="dropdown-item" href="#">Form 4</a></li>
           <li><a class="dropdown-item" href="#">Lab Supplies</a></li>
           <li><a class="dropdown-item" href="#">Engineering Sets</a></li>
           <li><a class="dropdown-item" href="#">T-Squares & Set Squares</a></li>

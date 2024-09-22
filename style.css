@@ -30,7 +30,7 @@ nav {
   width: 40px;
   margin-top: 20px;
 }
-.slider {
+.slider ,#carouselExampleIndicators {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -75,7 +75,7 @@ nav {
 }
 /**/
 .slider .list .item .content .description {
-  font-size: 18px;
+  font-size: 16px;
 }
 /**/
 .slider .list .item .content .buttons {
@@ -97,7 +97,7 @@ nav {
   font-weight: 500;
 }
 /**/
-.slider .list .item .content .buttons button:nth-child(2) {
+.slider .list .item .content .buttons .shop{
   background-color: transparent;
   color: rgb(234, 0, 255);
   border: 1px solid rgb(234, 0, 255);
@@ -553,10 +553,50 @@ h6{
 .info{
   padding: 10px;
 }
-.dropdown{
-  display:inline-flex;
-  justify-content: space-between;
+#carouselExampleIndicators {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: 0px;
 }
+
+.carousel-inner {
+  height: 100%; /* Ensure the inner container takes full height */
+}
+
+.carousel-item img {
+  width: 100vw; /* Make the image width full viewport width */
+  height: auto; /* Maintain aspect ratio */
+  min-height: 100vh; /* Ensure the image covers at least the full viewport height */
+  object-fit: cover; /* Cover the entire area without distortion */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #cd58eb; /* Change icon color to white for contrast */
+  border-radius: 50%; /* Optional: make icons circular */
+}
+.content-between{
+  position: absolute;
+  top: 100px;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+  
+}
+.dropdown-toggle{
+  color:#8549c2;
+
+}
+
+
+  
+
 
 
 
